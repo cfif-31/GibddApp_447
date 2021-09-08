@@ -9,6 +9,13 @@ namespace GibddApp_447.Classes
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class EfModel : DbContext
     {
+        private static EfModel Instance;
+        public static EfModel Init() {
+            if (Instance == null) {
+                Instance = new EfModel();
+            }
+            return Instance;
+        }
         // Your context has been configured to use a 'EfModel' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
         // 'GibddApp_447.Classes.EfModel' database on your LocalDb instance. 
@@ -22,7 +29,7 @@ namespace GibddApp_447.Classes
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
-
+        
         public virtual DbSet<User> Users { get; set; }
     }
 

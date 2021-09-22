@@ -35,6 +35,7 @@ namespace GibddApp_447
 
         private void UpdateData() {
             dgvUsers.Rows.Clear();
+            
             foreach (User user in EfModel.Init().Users)
             {
                 int r = dgvUsers.Rows.Add(user.FirstName, user.LastName, user.SerName, user.Login, user.Pass);
@@ -45,16 +46,17 @@ namespace GibddApp_447
         private void bt_adduser_Click(object sender, EventArgs e)
         {
 
-         /*   EfModel.Init().Users.Add(new User
-            {
-                FirstName = tb_firstname.Text,
-                LastName = tb_lastname.Text,
-                SerName = tb_middlename.Text,
-                Login = tb_login.Text,
-                Pass = tb_password.Text
-            });
-            model.SaveChanges();
-            UpdateData();*/
+            
+            /*   EfModel.Init().Users.Add(new User
+               {
+                   FirstName = tb_firstname.Text,
+                   LastName = tb_lastname.Text,
+                   SerName = tb_middlename.Text,
+                   Login = tb_login.Text,
+                   Pass = tb_password.Text
+               });
+               model.SaveChanges();
+               UpdateData();*/
         }
 
         private void btDelete_Click(object sender, EventArgs e)
@@ -74,6 +76,13 @@ namespace GibddApp_447
                 addUser.ShowDialog();
                 UpdateData();
             }
+        }
+
+        private void bt_add_Click(object sender, EventArgs e)
+        {
+            AddUserForm addUser = new AddUserForm(new User());
+            addUser.ShowDialog();
+            UpdateData();
         }
     }
 }

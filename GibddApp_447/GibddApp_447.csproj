@@ -63,6 +63,12 @@
     <Compile Include="AddUserForm.Designer.cs">
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Autorizate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorizate.Designer.cs">
+      <DependentUpon>Autorizate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\EfModel.cs" />
     <Compile Include="Classes\Entityes\User.cs" />
     <Compile Include="Form1.cs">
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorizate.resx">
+      <DependentUpon>Autorizate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

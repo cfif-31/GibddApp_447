@@ -37,6 +37,7 @@ namespace GibddApp_447
             this.PasswordColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btDelete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +110,22 @@ namespace GibddApp_447
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bt_add
+            // 
+            this.bt_add.Location = new System.Drawing.Point(469, 364);
+            this.bt_add.Name = "bt_add";
+            this.bt_add.Size = new System.Drawing.Size(81, 24);
+            this.bt_add.TabIndex = 9;
+            this.bt_add.Text = "button2";
+            this.bt_add.UseVisualStyleBackColor = true;
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 450);
+            this.Controls.Add(this.bt_add);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btDelete);
             this.Controls.Add(this.dgvUsers);
@@ -133,6 +145,7 @@ namespace GibddApp_447
         private System.Windows.Forms.DataGridViewTextBoxColumn PasswordColumn;
         private System.Windows.Forms.Button btDelete;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_add;
     }
 }
 

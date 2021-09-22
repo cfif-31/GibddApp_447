@@ -38,6 +38,7 @@ namespace GibddApp_447
                 EfModel.Init().Users.Add(EditedUser);
             }
             EfModel.Init().SaveChanges();
+            Close();
         }
     }
 }

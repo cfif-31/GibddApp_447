@@ -70,6 +70,8 @@
       <DependentUpon>Autorizate.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\EfModel.cs" />
+    <Compile Include="Classes\Entityes\Sell.cs" />
+    <Compile Include="Classes\Entityes\Tovar.cs" />
     <Compile Include="Classes\Entityes\User.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

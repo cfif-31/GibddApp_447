@@ -22,5 +22,10 @@ namespace GibddApp_447.Classes.Entityes
         public string Login { get; set; }
         [Required, MaxLength(32)]
         public string Pass { get; set; }
+        public virtual List<Sell> Sells { get; set; }
+        public User() {
+            Sells = new List<Sell>();
+        }
+
     }
 }
